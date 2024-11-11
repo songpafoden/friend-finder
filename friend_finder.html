@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>친구찾기 - Friend Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>친구찾기</h1>
+        <p>사랑과 관심사를 같이 하는 연결을 얻어보세요!</p>
+    </header>
+    
+    <main>
+        <section id="find-friend">
+            <h2>연결을 시작해보세요</h2>
+            <form id="friendForm">
+                <label for="age">나이:</label>
+                <input type="number" id="age" name="age" required><br><br>
+
+                <label for="hobbies">취미:</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="일러다운 취미 거래">
+                <br><br>
+                
+                <label for="mbti">MBTI:</label>
+                <select id="mbti" name="mbti">
+                    <option value="none" selected>선택하세요</option>
+                    <option value="INTJ">INTJ</option>
+                    <option value="ENTJ">ENTJ</option>
+                    <option value="INFJ">INFJ</option>
+                    <option value="ENFJ">ENFJ</option>
+                    <!-- Add more MBTI types as necessary -->
+                </select>
+                <br><br>
+
+                <label for="interests">관심 있는 사회적 과제들:</label>
+                <input type="text" id="interests" name="interests" placeholder="자위, 여행, 리뷰…">
+                <br><br>
+
+                <button type="button" id="findFriendBtn">친구찾기</button>
+            </form>
+        </section>
+
+        <section id="recommendation" hidden>
+            <h2>당연한 친구 추천 리스트</h2>
+            <div id="recommendedFriends"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>재미있는 연결을 위해 직접 입력하고 많이 매칭해보세요!</p>
+    </footer>
+</body>
+</html>
